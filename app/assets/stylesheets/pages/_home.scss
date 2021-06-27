@@ -6,6 +6,69 @@ body {
 }
 
 .container {
-  max-width: 860px;
-  margin-bottom: 50px;
+  max-width: 108.66vh;
+  height: 66vh;
+  display: flex;
+  justify-content: center;
+}
+
+.top-container {
+}
+
+.top-right-section {
+  justify-content: space-between;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+
+
+h1 {
+  font-size: 80px;
+  color: #FAFAFA;
+}
+
+h2, h3, h5 {
+  color: #FAFAFA;
+}
+
+h4 {
+  color: $light-gray;
+  font-size: 18px;
+}
+
+p {
+  color: $light-gray;
+}
+
+#homepage-h1 {
+  width: 50px;
+}
+
+#line-homepage {
+  color: $blue;
+  height: 5px;
+  width: 54px;
+  opacity: 1;
+}
+
+.h1-and-line {
+  height: 50vh;
+  justify-content: center;
+}
+
+.social-icons {
+}
+
+#social-icons-homepage a {
+  color: $white !important;
+}
+
+.social-icons a {
+  font-size: 22px;
+  margin-right: 6px;
+}
+
+.social-icons-container {
+  width: 66.666%;
 }

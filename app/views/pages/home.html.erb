@@ -1,11 +1,26 @@
-<div class="container top-section d-flex">
-  <div class="top-left-section">
-    <h1>Oliver Kyte.</h1>
-    <div class="social-icons"></div>
+<div class="container top-section d-flex flex-column">
+  <div class="top-container d-flex">
+    <div class="h1-and-line d-flex flex-column col-lg-8">
+      <h1 id="homepage-h1">Oliver Kyte.</h1>
+      <hr id="line-homepage">
+    </div>
+    <div class="top-right-section d-flex flex-column col-lg-4">
+      <h4>- Introduction</h4>
+      <h3>Full Stack Web Developer & SEO Consultant, based in London.</h3>
+      <p>Description... Insert description here</p>
+    </div>
   </div>
-  <div class="top-right-section">
-    <h4>-Introduction</h4>
-    <h3>Web Developer & SEO Consultant, based in London</h3>
-    <p>Description... Insert description here</p>
+  <div class="bottom-container d-flex">
+    <div class="social-icons-container d-flex">
+      <div class="social-icons" id="social-icons-homepage">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="bottom-container-projects ">
+      <%= link_to 'View my projects →', projects_path %>
+    </div>
   </div>
 </div>
+
