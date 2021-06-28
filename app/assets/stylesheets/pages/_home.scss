@@ -1,26 +1,29 @@
 // Specific CSS for your home-page
 body {
   background-color: #323232;
-  margin-top: 50px;
+  margin-top: 6.67vh;
+  margin-left: 15vh;
+  margin-right: 15vh;
 
 }
 
 .container {
-  max-width: 108.66vh;
-  height: 66vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
 }
 
-.top-container {
-}
-
 .top-right-section {
   justify-content: space-between;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
 }
 
+.top-section {
+  padding: 0px;
+}
+
+.bottom-container {
+  margin-top: 6.66vh;
+}
 
 
 h1 {
@@ -53,7 +56,6 @@ p {
 }
 
 .h1-and-line {
-  height: 50vh;
   justify-content: center;
 }
 
