@@ -13,12 +13,21 @@ body {
   justify-content: center;
 }
 
+.2nd-container {
+  height: 2000px;
+  display: flex;
+  justify-content: center;
+  background-color: $lighter-gray !important;
+}
+
 .top-right-section {
   justify-content: space-between;
 }
 
 .top-section {
   padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .bottom-container {
