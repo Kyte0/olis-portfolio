@@ -1,33 +1,72 @@
 // Specific CSS for your home-page
 body {
   background-color: #323232;
-  margin-top: 6.67vh;
-  margin-left: 15vh;
-  margin-right: 15vh;
-
 }
 
 .container {
   height: 50vh;
   display: flex;
   justify-content: center;
+  padding-left: 15vh;
+  padding-right: 15vh;
 }
 
-.2nd-container {
-  height: 2000px;
-  display: flex;
-  justify-content: center;
-  background-color: $lighter-gray !important;
+.second-section {
+  max-width: -webkit-fill-available;
+  background-color: $lighter-gray;
+  padding-top: 6.67vh;
+  padding-bottom: 6.67vh;
+  height: 75vh !important;
 }
 
+.second-section-container-left {
+  width: 50vw;
+}
+
+.second-section-container-right {
+  width: 50vw;
+}
+
+.half-section {
+  max-width: -webkit-fill-available;
+  height: 50vh !important;
+  padding: 0 !important;
+}
+
+.half-section-container-top {
+  height: 50%;
+  background-color: red !important;
+}
+
+.half-section-container-bottom {
+  height: 50%;
+  background-color: blue !important;
+}
+
+.third-section {
+  max-width: -webkit-fill-available;
+  padding-top: 6.67vh;
+  margin-bottom: 6.67vh;
+  height: 75vh !important;
+}
+
+.third-section-container-left {
+  width: 50vw;
+}
+
+.third-section-container-right {
+  width: 50vw;
+}
 .top-right-section {
   justify-content: space-between;
 }
 
 .top-section {
   padding: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 15vh;
+  margin-right: 15vh;
+  max-width: -webkit-fill-available;
+  margin-bottom: 3.33vh;
 }
 
 .bottom-container {
