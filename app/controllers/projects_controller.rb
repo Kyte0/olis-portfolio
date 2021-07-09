@@ -13,8 +13,12 @@ class ProjectsController < ApplicationController
 
   def create
   @project = Project.new(project_params)
-  @project.save
-  # Will raise ActiveModel::ForbiddenAttributesError
+  @project.user = current_user
+    if @project.save
+      redirect_to projects_path
+    else
+      render :new
+    end
   end
 
   def edit
@@ -39,9 +43,6 @@ class ProjectsController < ApplicationController
   def project_params
     params.require(:project).permit(:name, :url, :date)
   end
-
-
-
   # Will raise ActiveModel::ForbiddenAttributesError
 end
-end
+

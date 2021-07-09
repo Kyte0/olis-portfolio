@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   padding-left: 15vh;
@@ -16,38 +16,62 @@ body {
   background-color: $lighter-gray;
   padding-top: 6.67vh;
   padding-bottom: 6.67vh;
-  height: 75vh !important;
+  height: 50vh !important;
+  padding-left: 15vh;
+  padding-right: 15vh;
+  justify-content: space-between;
+}
+
+.second-section h3 {
+  width: 50%;
+}
+
+.second-section h4 {
+  color: $blue;
+  font-size: 16px;
+  word-spacing: 5px;
+}
+
+.second-section p {
+  width: 70%;
+}
+
+a {
+  font-family: $headers-font;
 }
 
 .second-section-container-left {
   width: 50vw;
+  justify-content: space-between;
 }
 
 .second-section-container-right {
   width: 50vw;
+  justify-content: space-evenly;
 }
 
 .half-section {
   max-width: -webkit-fill-available;
-  height: 50vh !important;
+  height: 40vh !important;
   padding: 0 !important;
+  position: relative;
 }
 
 .half-section-container-top {
   height: 50%;
-  background-color: red !important;
+  background-color: $lighter-gray !important;
 }
 
 .half-section-container-bottom {
   height: 50%;
-  background-color: blue !important;
+  background-color: $gray !important;
 }
 
 .third-section {
   max-width: -webkit-fill-available;
   padding-top: 6.67vh;
   margin-bottom: 6.67vh;
-  height: 75vh !important;
+  height: 40vh !important;
 }
 
 .third-section-container-left {
@@ -121,4 +145,26 @@ p {
 
 .social-icons-container {
   width: 66.666%;
+}
+
+.homepage-card-container {
+  position: absolute;
+  align-items: center;
+  width: 100%;
+}
+
+.second-bottom-left {
+  width: 50%;
+}
+
+.second-bottom-right {
+  width: 50%;
+}
+
+.homepage_image {
+  height: 100vh;
+  z-index: -3;
+  position: absolute;
+  left: 22vw;
+  top: 0vh;
 }

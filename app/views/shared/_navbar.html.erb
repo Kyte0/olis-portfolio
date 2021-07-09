@@ -30,9 +30,9 @@
       </li>
       <li class="nav-item active">
       <% if current_page?(projects_path) %>
-        <%= link_to "Projects", projects_path, class: "nav-link nav-active" %>
+        <%= link_to "Projects", href="/projects", class: "nav-link nav-active" %>
       <% else %>
-        <%= link_to "Projects", projects_path, class: "nav-link" %>
+        <%= link_to "Projects", href="/projects", class: "nav-link" %>
       <% end  %>
       </li>
       <li class="nav-item">

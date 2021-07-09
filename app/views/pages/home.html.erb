@@ -1,5 +1,6 @@
 <div class="container top-section d-flex flex-column">
   <div class="top-container d-flex">
+    <%= image_tag("imageedit_3_6332544292.png", :alt => "rss feed", :class => "homepage_image") %>
     <div class="h1-and-line d-flex flex-column col-lg-8">
       <h1 id="homepage-h1">Oliver Kyte.</h1>
       <hr id="line-homepage">
@@ -23,18 +24,43 @@
     </div>
   </div>
 </div>
-<div class="container second-section d-flex">
-  <div class="second-section-container-left d-flex">
-    <p>hello</p>
+<div class="container second-section d-flex flex-column">
+  <div class="second-top d-flex flex-row">
+    <div class="second-section-container-left d-flex flex-column">
+      <p>- Experience</p>
+      <h3>Recently completed Le Wagon's Web Development Bootcamp.</h3>
+      <p>I developed commercial experience working with one of Hertfordshire’s leading Digital Agencies and in-house at one of the world’s largest restaurant brands. </p>
+    </div>
+    <div class="second-section-container-right d-flex flex-column">
+      <h3>Here are some of my latest projects.</h3>
+      <p>I've learned to build sites using a variety of languages, but more importantly have me the mentality to pick up new stacks. I'm most proficient in the following stacks:</p>
+    </div>
   </div>
-  <div class="second-section-container-right d-flex">
+  <div class="second-bottom d-flex flex-row">
+    <div class="second-bottom-left">
+      <%= link_to 'View my CV →', "/files/CV_June_2021.pdf" %>
+    </div>
+    <div class="second-bottom-right">
+      <h4>Ruby HTML CSS SQL Javascript</h4>
+    </div>
   </div>
 </div>
 <div class="container half-section d-flex flex-column">
   <div class="half-section-container-top d-flex">
-    <p>hello</p>
   </div>
   <div class="half-section-container-bottom d-flex">
+  </div>
+  <div class="homepage-card-container d-flex flex-column">
+    <% @projects.each do |project| %>
+      <div class="card homepage-card">
+        <%= link_to projects_path(@projects), class: "text-decoration-none text-body" do %>
+        <div class="card-name-description d-flex flex-column">
+          <h2><%= project.name %>.</h2>
+          <p><%= project.description %></p>
+        </div>
+        <% end %>
+      </div>
+    <%end %>
   </div>
 </div>
 <div class="container third-section d-flex">
